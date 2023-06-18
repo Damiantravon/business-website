@@ -1,0 +1,568 @@
+@import'https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Caveat:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&family=Orbitron&family=Poppins&family=Ysabeau:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,1;1,400;1,500&display=swap';
+
+
+* {
+    font-family: "Alkatra";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.container{
+   background: url(./img/katarina-milosevic-GmeTiG7J9BE-unsplash.jpg)no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   position: relative;
+   width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 80px;
+ 
+}
+
+
+.logo a{
+    color: white;
+    font-size: 40px;
+    font-weight:800;
+}
+
+.menu_icon{
+    display: flex;
+    margin-right: 4%;
+}
+
+.menu_icon i {
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+}
+
+#bars {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 15px;
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all ease .3s;
+}
+
+.nav ul li a:hover {
+    color: rgb(184, 179, 179);
+    background-color: black;
+    padding: 5px;
+    border-radius: 20px;
+    
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 70px 200px;
+    text-align: center;
+
+}
+
+
+.content h1 {
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.content h4 {
+    color: white;
+    font-size: 25px;
+    
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn1{
+    margin-top: 20px;
+    font-size: 17px;
+    padding: 20px 90px;
+    border-radius: 15px;
+    transition: all ease .3s;
+}
+
+
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.about_img img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    padding:3rem;
+    justify-content: space-between;
+}
+
+.about_text {
+    margin: 30px;
+    padding-right: 100px;
+}
+
+.about_text h2 {
+    font-size: 1.8rem;
+    margin-left: 4rem;
+    text-transform: uppercase;
+}
+
+.about_text p {
+    font-size: 16px;
+    margin: 0.5rem 1.1rem;
+    padding-right: 0 2rem;
+}
+
+
+
+.about_text a {
+    color: black;
+    margin-left: 1.5rem;
+    background-color: burlywood;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: all ease .3s;
+}
+
+.about_text a:hover{
+    color:white;
+    background: black;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.product {
+    padding: 30px;
+}
+
+.product_container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 3rem;
+    margin-top: 2rem;
+}
+
+
+
+.product_container .box {
+    position: relative;
+    padding: 10px;
+    border: 8px;
+    box-shadow:0 0 10px grey;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-left: 20px;
+    
+}
+
+.type{
+    display: none;
+}
+
+.type.active{
+    display: flex;
+}
+
+
+
+.product_container .box img {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.product_container .box h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 30px 10px ;
+}
+
+.product_container .box .content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product_container .box .content span {
+    padding: 0 16px;
+    background-color: burlywood;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.product_container .box .content a {
+    padding: 0 16px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all ease .5s;
+}
+
+.product_container .box .content a:hover {
+    background: burlywood;
+}
+
+
+.contact {
+    background: grey;
+    padding: 5px 30px;
+}
+.contact .main_heading {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_column{
+    width: 49%;
+}
+
+.left_column h2 {
+    font-size: 26px;
+}
+
+.formgroup input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid grey;
+    background: white;
+    border-radius: 9px;
+}
+
+.formgroup textarea{
+     width: 100%;
+    padding: 10px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.contactbtn{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: all ease .5s
+}
+
+.contactbtn:hover{
+    color: white;
+    background: black;
+}
+
+.right_column{
+    margin-left: 100px;
+    padding: 50px;
+}
+
+.right_column h2{
+   font-size: 30px;
+   margin-bottom: 15px;
+}
+
+.right_column p{
+   line-height: 1.6;
+}
+ 
+.right_column .items {
+    margin: 10px 10px;
+}
+
+
+ .right_column .items i {
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+}
+
+
+ .right_column .items .item span {
+    font-size: 14px;
+}
+
+
+.footer{
+    text-align: center;
+}
+
+
+
+
+@media (max-width:1058px) {
+    .nav{
+        padding: 16px 80px;
+    }
+
+    .logo a{
+        font-size: 40px;
+    }
+
+
+    .wrapper{
+        padding: 60px 30px;
+    }
+ 
+
+    .content h1 {
+        font-size: 42px;
+        
+    }
+ 
+
+    .content h4{
+        font-size:28px;
+    }
+     .content p {
+        font-size: 22px;
+     }
+}
+
+@media (max-width: 991px) {
+     .nav{
+        padding: 16px 4%;
+    }
+
+    .logo a{
+        font-size: 33px;
+    }
+
+
+    .wrapper{
+        padding: 67px 4%;
+    }
+ 
+
+    .content h1 {
+        font-size: 40px;
+        
+    }
+ 
+
+    .content h4{
+        font-size:28px;
+    }
+     .content p {
+        font-size: 22px;
+     }
+
+     .about_text{
+        padding: 2px 10px;
+     }
+
+     .product_container{
+        padding: 2px 1px;
+     }
+}
+
+@media (max-width: 814px) {
+    #bars{
+        display: inline-block;
+    }
+
+    .navbar ul{
+        position: absolute;
+        top: -600px ;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: black;
+        row-gap: 20px;
+        padding: 20px;
+        transition: all ease .5s;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .navbar ul li a:hover{
+         color: grey;
+    }
+
+    .navbar ul.active {
+        top: 10%;
+    }
+
+    .nav{
+        padding: 16px 4%;
+    }
+
+    .logo a{
+        font-size: 40px;
+    }
+
+
+    .wrapper{
+        padding: 60px 4%;
+    }
+ 
+
+    .content h1 {
+        font-size: 28px;
+        
+    }
+ 
+
+    .content h4{
+        font-size:22px;
+    }
+     .content p {
+        font-size: 18px;
+     }
+
+     .about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     }
+
+     .content span {
+        padding: 2px;
+     }
+
+      .product_container{
+        display: flex;
+        flex-direction: column;
+        
+     }
+
+     .box{
+        margin-top: 20px;
+     }
+}
+
+
+@media (max-width:568px){
+    .product_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product_container .box {
+        margin-top: 20px;
+    }
+
+    .contact_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_column{
+        text-align: center;
+        width:100%;
+    }
+
+    .right_column {
+        text-align: center;
+    }
+    .content h1 {
+        font-size: 24px;
+        
+    }
+     
+
+    .logo a{
+        font-size:28px;
+    }
+
+    .content h4{
+        font-size:20px;
+    }
+     .content p {
+        font-size: 16px;
+     }
+     .container{
+        padding: 12px 4%;
+        
+     }
+
+     .about_text{
+        width: 90%;
+        text-align: center;
+        padding: 2px 10px;
+     }
+
+     .about_img img{
+        width: 350px;
+     }
+
+     .right_column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 2px;
+        
+     }
+     .navbar ul.active {
+        top: 15%;
+    }
+}
+
+@media (max-width:385px){
+     .content h1 {
+        font-size: 20px;
+        
+    }
+    .content h4{
+        font-size:18px;
+    }
+     .content p {
+        font-size: 16px;
+     }   
+
+    .about_img img{
+    width: 280px;
+}
+    
+}
